@@ -23,6 +23,7 @@ import vendor.mediatek.hardware.bluetooth.audio.CodecType;
 import vendor.mediatek.hardware.bluetooth.audio.Lc3Capabilities;
 import vendor.mediatek.hardware.bluetooth.audio.LdacCapabilities;
 import vendor.mediatek.hardware.bluetooth.audio.Lhdcv5Capabilities;
+import vendor.mediatek.hardware.bluetooth.audio.MihcCapabilities;
 import vendor.mediatek.hardware.bluetooth.audio.SbcCapabilities;
 
 /**
@@ -45,6 +46,7 @@ parcelable CodecCapabilities {
         Lc3Capabilities lc3Capabilities;
         VendorCapabilities vendorCapabilities;
         Lhdcv5Capabilities lhdcv5Capabilities;
+        MihcCapabilities mihcCapabilities;
     }
     CodecType codecType;
     Capabilities capabilities;

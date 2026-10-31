@@ -50,5 +50,6 @@ parcelable CodecCapabilities {
     vendor.mediatek.hardware.bluetooth.audio.Lc3Capabilities lc3Capabilities;
     vendor.mediatek.hardware.bluetooth.audio.CodecCapabilities.VendorCapabilities vendorCapabilities;
     vendor.mediatek.hardware.bluetooth.audio.Lhdcv5Capabilities lhdcv5Capabilities;
+    vendor.mediatek.hardware.bluetooth.audio.MihcCapabilities mihcCapabilities;
   }
 }

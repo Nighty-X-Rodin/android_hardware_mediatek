@@ -55,5 +55,6 @@ parcelable CodecConfiguration {
     vendor.mediatek.hardware.bluetooth.audio.Lc3Configuration lc3Config;
     vendor.mediatek.hardware.bluetooth.audio.CodecConfiguration.VendorConfiguration vendorConfig;
     vendor.mediatek.hardware.bluetooth.audio.Lhdcv5Configuration lhdcv5Config;
+    vendor.mediatek.hardware.bluetooth.audio.MihcConfiguration mihcConfig;
   }
 }

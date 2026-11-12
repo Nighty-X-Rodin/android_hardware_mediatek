@@ -22,7 +22,7 @@ class MtkBootRegionControl final {
     bool SetActiveBootSlot(int32_t in_slot);
 
   private:
-    int (*mSetBootPartCb)(int32_t in_slot);
+    int (*mSetBootPartCb)(int32_t in_slot) = nullptr;
 };
 
 }  // namespace aidl::android::hardware::boot

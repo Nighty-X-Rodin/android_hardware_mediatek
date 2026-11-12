@@ -114,9 +114,12 @@ ScopedAStatus BootControl::setActiveBootSlot(int32_t in_slot) {
         return ScopedAStatus::fromServiceSpecificErrorWithMessage(
                 INVALID_SLOT, (std::string("Invalid slot ") + std::to_string(in_slot)).c_str());
     }
-    if (!impl_.SetActiveBootSlot(in_slot) || !brControl_.SetActiveBootSlot(in_slot)) {
+    if (!impl_.SetActiveBootSlot(in_slot)) {
         return ScopedAStatus::fromServiceSpecificErrorWithMessage(COMMAND_FAILED,
                                                                   "Operation failed");
+    }
+    if (!brControl_.SetActiveBootSlot(in_slot)) {
+        LOG(WARNING) << "Failed to switch MTK boot region for slot " << in_slot;
     }
     return ScopedAStatus::ok();
 }
